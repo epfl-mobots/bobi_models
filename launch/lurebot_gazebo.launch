@@ -1,5 +1,5 @@
 <launch>
-    <param name="fishbot_description" command="$(find xacro)/xacro '$(find bobi_models)/urdf/fishbot_simple.urdf.xacro'"/>
+    <param name="lurebot_description" command="$(find xacro)/xacro '$(find bobi_models)/urdf/lurebot_simple.urdf.xacro'"/>
 
     <arg name="x" default="0"/>
     <arg name="y" default="0"/>
@@ -16,6 +16,6 @@
 
     <arg name="ns" default="/" />
     <group ns="$(arg ns)">
-        <node name="fishbot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param fishbot_description -model fishbot -x $(arg x) -y $(arg y) -z $(arg z)" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+        <node name="lurebot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param lurebot_description -model lurebot -x $(arg x) -y $(arg y) -z $(arg z)" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
     </group>
 </launch>

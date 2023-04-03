@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="fishbot">
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="lurebot">
 
     <xacro:include filename="$(find bobi_models)/urdf/utils/inertia.xacro" />
     <xacro:include filename="$(find bobi_models)/urdf/utils/materials.xacro" />
     <xacro:include filename="$(find bobi_models)/urdf/utils/custom_sensors.xacro" />
-    <xacro:include filename="$(find bobi_models)/urdf/fishbot_simple.gazebo" />
+    <xacro:include filename="$(find bobi_models)/urdf/lurebot_simple.gazebo" />
 
     <xacro:property name="wheel_radius" value="0.01"/>
     <xacro:property name="wheel_len" value="0.004"/>
